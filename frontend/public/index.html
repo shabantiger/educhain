@@ -1,0 +1,60 @@
+<!-- client/public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0052FF" />
+    <meta name="description" content="EDUCHAIN Uganda - Blockchain-based academic certificate system for Uganda. Issue, verify, and manage tamper-proof educational credentials on the blockchain." />
+    <meta name="keywords" content="blockchain, certificates, education, Uganda, NFT, academic, credentials, verification" />
+    <meta name="author" content="EDUCHAIN Uganda Team" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://EDUCHAIN.ug/" />
+    <meta property="og:title" content="EDUCHAIN Uganda - Blockchain Academic Certificates" />
+    <meta property="og:description" content="Revolutionary blockchain-based academic certificate system for Uganda. Secure, verifiable, and tamper-proof educational credentials." />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://EDUCHAIN.ug/" />
+    <meta property="twitter:title" content="EDUCHAIN Uganda - Blockchain Academic Certificates" />
+    <meta property="twitter:description" content="Revolutionary blockchain-based academic certificate system for Uganda. Secure, verifiable, and tamper-proof educational credentials." />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>EDUCHAIN Uganda - Blockchain Academic Certificates</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="padding: 20px; text-align: center; background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb;">
+        <h2>JavaScript Required</h2>
+        <p>You need to enable JavaScript to run EDUCHAIN Uganda.</p>
+        <p>This application requires JavaScript to interact with the blockchain and provide certificate management features.</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
+    
+    <!-- Performance monitoring (optional) -->
+    <script>
+      // Basic performance monitoring
+      window.addEventListener('load', function() {
+        if ('performance' in window) {
+          const perfData = performance.getEntriesByType('navigation')[0];
+          console.log('Page load time:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+        }
+      });
+    </script>
+  </body>
+</html>
