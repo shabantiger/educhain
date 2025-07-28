@@ -1,0 +1,169 @@
+/* Basic styles for AdminDashboard */
+.admin-dashboard {
+  padding: 2rem;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+.admin-dashboard h2 {
+  margin-bottom: 1.5rem;
+}
+.revenue-analytics, .verification-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.plan-breakdown ul {
+  list-style: disc inside;
+  margin: 0.5rem 0 0 1rem;
+}
+.verification-stats {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+.stat-item {
+  background: #f0f4f8;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+.stat-label {
+  display: block;
+  font-size: 0.95rem;
+  color: #555;
+}
+.stat-value {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.requests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.request-card {
+  background: #fafbfc;
+  border: 1px solid #e3e7ed;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  width: 320px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.request-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.status-badge {
+  padding: 0.2rem 0.7rem;
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.status-badge.pending { background: #f0ad4e; }
+.status-badge.approved { background: #5cb85c; }
+.status-badge.rejected { background: #d9534f; }
+.documents ul {
+  margin: 0.5rem 0 0 1rem;
+}
+.request-actions {
+  margin-top: 1rem;
+  text-align: right;
+}
+.btn-review {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.btn-review:hover {
+  background: #0056b3;
+}
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.review-modal {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  position: relative;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.review-form .form-group {
+  margin-bottom: 1rem;
+}
+.review-form label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+}
+.review-form select, .review-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.btn-cancel {
+  background: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-confirm {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-confirm:disabled {
+  background: #b7e0c2;
+  cursor: not-allowed;
+}
+.loading-spinner {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin: 2rem 0;
+} 

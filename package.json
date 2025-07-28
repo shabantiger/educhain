@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "wagmi": "^2.15.6"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  }
+}
